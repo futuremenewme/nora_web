@@ -1,0 +1,155 @@
+{
+  "homepage": {
+    "title": "Objevuj události kolem sebe",
+    "subtitle": "Interaktivní mapa událostí, kde podniky a organizátoři sdílí to nejlepší z okolí.",
+    "map": "Zobrazit mapu",
+    "download": "Stáhnout aplikaci"
+  },
+  "nav": {
+    "home": "Domů",
+    "about": "O aplikaci",
+    "map": "Mapa událostí",
+    "download": "Stáhnout aplikaci",
+    "qa": "Q&A"
+  },
+  "aboutPage": {
+  "badge": "O aplikaci",
+  "title": "Poznej nás blíž",
+  "intro": "Nora spojuje lidi s událostmi kolem nich. Na jednom místě najdeš koncerty, party, sportovní akce, kulturní události i další zajímavé dění ve svém okolí.",
+  "why": {
+    "title": "Proč tato aplikace vznikla?",
+    "text": "Chceme lidem usnadnit přístup k informacím o tom, co se děje kolem nich. Už není potřeba složitě hledat na více místech. Všechno důležité najdeš jednoduše, přehledně a na jednom místě."
+  },
+  "forWhom": {
+    "title": "Pro koho je aplikace určená?",
+    "text": "Především pro lidi, kteří chtějí objevovat nové zážitky, bavit se, sportovat, poznávat nová místa i nové lidi. Zároveň je určená i pro podniky a organizátory, kteří chtějí své události zviditelnit a dostat je k více lidem."
+  },
+  "easy": {
+    "title": "Je aplikace složitá na používání?",
+    "text": "Vůbec ne. Nora je navržená tak, aby byla stručná, přehledná a snadno použitelná. Chceme, aby se v ní člověk rychle zorientoval a našel to, co hledá, bez zbytečného klikání navíc."
+  },
+  "benefit": {
+    "title": "Co je její největší výhoda?",
+    "text": "Všechno máš na jednom místě. Místo zdlouhavého hledání můžeš jednoduše otevřít mapu a hned vidět, co se děje ve tvém okolí — podle místa, data nebo typu události."
+  },
+  "future": {
+    "title": "Co chceme do budoucna?",
+    "text": "Chceme vytvářet prostor, kde lidé snadno objeví zajímavé akce kolem sebe a organizátoři získají jednoduchý způsob, jak je dostat k publiku. Cílem je, aby objevování událostí bylo rychlé, přirozené a přehledné."
+  },
+  "contact": {
+    "title": "Máš dotaz, nápad nebo připomínku?",
+    "text": "Jsme otevření návrhům, jak Noru dál zlepšovat. Budeme rádi, když nám napíšeš na"
+  }
+},
+"downloadPage": {
+  "badge": "Stáhnout aplikaci",
+  "title": "Měj zážitky vždy po ruce",
+  "intro": "S aplikací Nora máš mapu událostí stále u sebe. Objevuj koncerty, party, sport i další zajímavé dění rychle, přehledně a kdykoliv potřebuješ.",
+  "googlePlay": "Stáhnout na Google Play",
+  "appStore": "Stáhnout v App Store",
+  "benefits": {
+    "always": {
+      "title": "Vždy po ruce",
+      "text": "Měj přehled o událostech kdykoliv a kdekoliv."
+    },
+    "fast": {
+      "title": "Rychlé objevování",
+      "text": "Najdi zajímavé akce během pár vteřin."
+    },
+    "clear": {
+      "title": "Přehledně na mapě",
+      "text": "Vše důležité uvidíš jednoduše na jednom místě."
+    }
+  },
+  "outro": "Vyber si svou platformu a objevuj dění kolem sebe."
+},
+"mapSection": {
+  "badge": "Mapa událostí",
+  "title": "Všechny události přehledně na jednom místě",
+  "text": "Otevři mapu a okamžitě uvidíš, co se děje kolem tebe."
+},
+"qaSection": {
+  "title": "Časté dotazy"
+},
+"legal": {
+  "back": "Zpět",
+  "terms": "Podmínky používání",
+  "privacy": "Zásady ochrany soukromí"
+},
+
+  "mapPage": {
+    "title": "Mapa událostí",
+    "back": "Zpět",
+    "close": "Zavřít",
+    "searchPlaceholder": "Hledat město, klub nebo událost...",
+    "loadingMap": "Načítám mapu...",
+    "loadingData": "Načítám data...",
+    "loadingLocation": "Získávám tvoji polohu...",
+    "myLocation": "Moje poloha",
+    "detail": "Zobrazit detail",
+    "noImage": "Bez obrázku",
+    "empty": "Žádné odpovídající události nebyly nalezeny.",
+    "categories": {
+      "concert": "Koncert",
+      "party": "Party",
+      "festival": "Festival",
+      "sport": "Sport",
+      "theatre": "Divadlo",
+      "cinema": "Kino",
+      "art": "Umění",
+      "food": "Gastro",
+      "kids": "Dětská akce",
+      "family": "Rodinná akce",
+      "workshop": "Workshop",
+      "lecture": "Přednáška",
+      "networking": "Networking",
+      "market": "Market",
+      "community": "Komunitní",
+      "charity": "Charita",
+      "outdoor": "Outdoor",
+      "wellness": "Wellness",
+      "other": "Ostatní"
+    },
+    "dateFilters": {
+      "any": "Kdykoliv",
+      "today": "Dnes",
+      "tomorrow": "Zítra",
+      "week": "Tento týden",
+      "custom": "Vlastní datum"
+    },
+    "eventModeFilters": {
+      "all": "Vše",
+      "single": "Jednorázová",
+      "recurring": "Opakující se"
+    },
+    "priceFilters": {
+      "all": "Vše",
+      "free": "Zdarma",
+      "paid": "Placené"
+    },
+    "filters": {
+      "open": "Otevřít filtry",
+      "title": "Filtry",
+      "categoriesTitle": "Typ události",
+      "eventModeTitle": "Režim události",
+      "priceTitle": "Cena",
+      "dateTitle": "Datum",
+      "allCategories": "Vše",
+      "reset": "Resetovat",
+      "apply": "Použít"
+    },
+    "errors": {
+      "googleMaps": "Nepodařilo se načíst Google Mapy.",
+      "firestore": "Nepodařilo se načíst události.",
+      "placeNotFound": "Dané místo se nepodařilo najít.",
+      "locationUnavailable": "Geolokace není v tomto zařízení dostupná.",
+      "locationDenied": "Přístup k poloze byl zamítnut nebo se nepodařilo získat polohu."
+    },
+    "locationPrompt": {
+      "title": "Použít moji polohu?",
+      "description": "Po potvrzení se prohlížeč může zeptat na povolení polohy. Když povolíš přístup, mapa se přiblíží na tvoji aktuální pozici.",
+      "cancel": "Zrušit",
+      "confirm": "Pokračovat"
+    }
+  }
+}

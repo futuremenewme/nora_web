@@ -1,0 +1,151 @@
+@import "tailwindcss";
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* BARVY */
+:root {
+  --background: #0F0F17;
+  --foreground: #F5F3FF;
+
+  --primary: #9B87F5;
+  --primary-light: #C4B5FD;
+  --accent: #D9A1A9;
+
+  --surface: #171726;
+  --border: rgba(255, 255, 255, 0.08);
+}
+
+/* Tailwind theme bridge */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* BODY */
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* UNIVERSAL STYLES */
+section {
+  scroll-margin-top: 100px; /* aby se to neschovalo pod header */
+}
+
+/* SCROLLBAR (optional, ale hezké) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0F0F17;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2A2A3D;
+  border-radius: 999px;
+}
+
+.legal-content {
+  line-height: 1.7;
+}
+
+.legal-content h2 {
+  margin-top: 2.2rem;
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  color: #15131F;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.legal-content p {
+  margin-top: 0.9rem;
+}
+
+.legal-content ul {
+  margin-top: 0.9rem;
+  padding-left: 1.25rem;
+  list-style: disc;
+}
+
+.legal-content li {
+  margin-top: 0.45rem;
+}
+
+.legal-content a {
+  color: #7357E8;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.legal-content hr {
+  margin: 2rem 0 0;
+  border: 0;
+  border-top: 1px solid #E5E1F5;
+}
+
+.legal-content .meta,
+.legal-content .updated {
+  margin-bottom: 1.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  color: #5f596d;
+  font-size: 0.9rem;
+}
+
+.legal-content .meta-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  border-radius: 999px;
+  border: 1px solid #E5E1F5;
+  background: #F8F6FF;
+  padding: 0.25rem 0.65rem;
+  color: #4b455f;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.legal-content .meta-pill strong {
+  color: #15131F;
+}
+
+.legal-content .note,
+.legal-content .warn {
+  margin-top: 1.1rem;
+  border-radius: 14px;
+  padding: 1rem;
+}
+
+.legal-content .note {
+  border: 1px solid #E5E1F5;
+  background: #F8F6FF;
+}
+
+.legal-content .warn {
+  border: 1px solid #F3D7B8;
+  background: #FFF7ED;
+}
+
+.legal-content .small {
+  color: #5f596d;
+  font-size: 0.92rem;
+}
+
+.legal-content .icon {
+  flex: 0 0 auto;
+  font-size: 1.1rem;
+}

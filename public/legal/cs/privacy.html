@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Zásady ochrany osobních údajů – NORA</title>
+
+  <!-- SEO / Sharing (volitelné, ale užitečné) -->
+  <meta name="description" content="Zásady ochrany osobních údajů aplikace NORA – jaké údaje zpracováváme, proč a jak je chráníme." />
+  <meta property="og:title" content="Zásady ochrany osobních údajů – NORA" />
+  <meta property="og:description" content="Jaké údaje aplikace NORA zpracovává, za jakým účelem a jak jsou chráněny." />
+  <meta property="og:type" content="article" />
+  <meta name="robots" content="index,follow" />
+
+  <!-- ✅ Versioning: měníš jen tady -->
+  <meta name="nora-doc" content="privacy" />
+  <meta name="nora-version" content="1.1" />
+  <meta name="nora-updated" content="2026-05-04" />
+  <meta name="nora-effective" content="2026-05-04" />
+
+  <!-- Klasické, dobře čitelné písmo -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: #fafafa;
+      color: #222;
+      margin: 0;
+      padding: 0;
+      line-height: 1.65;
+    }
+
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 32px 20px 64px;
+      background: #ffffff;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .updated {
+      color: #666;
+      font-size: 14px;
+      margin-bottom: 32px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .meta-pill {
+      display: inline-flex;
+      gap: 6px;
+      align-items: center;
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid #e5e7eb;
+      background: #f9fafb;
+      color: #444;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .meta-pill strong {
+      font-weight: 800;
+      color: #111;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin-top: 40px;
+      margin-bottom: 12px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    p {
+      margin: 0 0 12px;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #e0e0e0;
+      margin: 40px 0;
+    }
+
+    .icon {
+      font-size: 20px;
+    }
+
+    .contact {
+      background: #f3f4f6;
+      padding: 16px;
+      border-radius: 8px;
+      margin-top: 12px;
+      border: 1px solid #e5e7eb;
+    }
+
+    a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .small {
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+
+  <script>
+    // ✅ Zobrazí verzi/datum/účinnost na stránce z meta tagů.
+    (function () {
+      function getMeta(name) {
+        var el = document.querySelector('meta[name="' + name + '"]');
+        return el ? el.getAttribute('content') : '';
+      }
+
+      function formatDateISOToCZ(iso) {
+        // očekává YYYY-MM-DD
+        if (!iso || !/^\d{4}-\d{2}-\d{2}$/.test(iso)) return iso || '';
+        var parts = iso.split('-');
+        var y = parts[0], m = parts[1], d = parts[2];
+        return d + '. ' + m + '. ' + y;
+      }
+
+      document.addEventListener('DOMContentLoaded', function () {
+        var version = getMeta('nora-version');
+        var updated = getMeta('nora-updated');
+        var effective = getMeta('nora-effective');
+
+        var vEl = document.getElementById('noraVersion');
+        var uEl = document.getElementById('noraUpdated');
+        var eEl = document.getElementById('noraEffective');
+
+        if (vEl && version) vEl.textContent = version;
+        if (uEl && updated) uEl.textContent = formatDateISOToCZ(updated);
+        if (eEl && effective) eEl.textContent = formatDateISOToCZ(effective);
+      });
+    })();
+  </script>
+</head>
+
+<body>
+  <main class="container">
+    <h1>🔐 Zásady ochrany osobních údajů – NORA</h1>
+
+    <!-- ✅ automaticky se naplní z meta tagů -->
+    <div class="updated">
+      <span class="meta-pill">Verze: <strong id="noraVersion">1.1</strong></span>
+      <span class="meta-pill">Poslední aktualizace: <strong id="noraUpdated">04. 05. 2026</strong></span>
+      <span class="meta-pill">Účinnost od: <strong id="noraEffective">04. 05. 2026</strong></span>
+
+      <noscript>
+        <span class="meta-pill">Pozn.: Pro automatické doplnění metadat je potřeba JavaScript.</span>
+      </noscript>
+    </div>
+
+    <p>
+      Aplikace <strong>NORA</strong> („aplikace“, „služba“) slouží jako platforma pro
+      přidávání a objevování událostí. Ochrana vašich osobních údajů je pro nás důležitá.
+      Tyto zásady vysvětlují, jaké informace shromažďujeme, proč je používáme a jak jsou chráněny.
+    </p>
+
+    <hr />
+
+    <h2><span class="icon">📥</span>1. Shromažďované údaje</h2>
+    <p>Aplikace může shromažďovat následující údaje:</p>
+    <ul>
+      <li>e-mailová adresa</li>
+      <li>telefonní číslo (pro ověření účtu)</li>
+      <li>identitu na sociální síti</li>
+      <li>údaje o poloze (město / region – pouze se souhlasem)</li>
+      <li>technické informace o zařízení (např. typ zařízení, operační systém)</li>
+    </ul>
+
+    <p>
+      Osobní údaje jsou shromažďovány pouze v rozsahu nezbytném
+      pro správné fungování aplikace.
+    </p>
+
+    <hr />
+
+    <h2><span class="icon">🎯</span>2. Účel zpracování</h2>
+    <p>Vaše údaje používáme za účelem:</p>
+    <ul>
+      <li>vytvoření a správy uživatelského účtu</li>
+      <li>ověření identity uživatelů</li>
+      <li>zobrazení relevantních událostí dle polohy</li>
+      <li>zlepšování funkčnosti aplikace</li>
+      <li>zajištění bezpečnosti a prevence zneužití</li>
+    </ul>
+
+    <hr />
+
+    <h2><span class="icon">📱</span>3. Přístup k funkcím zařízení</h2>
+    <p>Aplikace může požadovat přístup k:</p>
+    <ul>
+      <li>internetu (synchronizace dat)</li>
+      <li>oznámením (notifikace o událostech)</li>
+      <li>poloze (dobrovolné potvrzení při vstupu do aplikace)</li>
+    </ul>
+    <p>Veškerý přístup je vždy volitelný a lze jej změnit v nastavení zařízení.</p>
+
+    <hr />
+
+    <h2><span class="icon">🤝</span>4. Služby třetích stran</h2>
+    <p>Aplikace využívá služby třetích stran, zejména:</p>
+    <ul>
+      <li>Firebase (autentizace, databáze, analytika)</li>
+      <li>platební služby pro zpracování nákupů v aplikaci</li>
+    </ul>
+    <p class="small">
+      Tyto služby mohou zpracovávat údaje dle vlastních zásad ochrany osobních údajů.
+    </p>
+
+    <hr />
+
+    <h2><span class="icon">🔒</span>5. Zabezpečení údajů</h2>
+    <p>
+      Používáme technická a organizační opatření k ochraně osobních údajů.
+      Přesto nelze zaručit absolutní bezpečnost přenosu dat přes internet.
+    </p>
+
+    <hr />
+
+    <h2><span class="icon">🗑️</span>6. Uchovávání a mazání údajů</h2>
+    <p>
+      Osobní údaje uchováváme pouze po dobu existence účtu.
+      Uživatel může kdykoli požádat o smazání účtu a všech souvisejících údajů.
+    </p>
+
+    <hr />
+
+    <h2><span class="icon">🌍</span>7. Mezinárodní uživatelé</h2>
+    <p>
+      Aplikace je dostupná i mimo Českou republiku. Údaje jsou zpracovávány
+      v souladu s platnými právními předpisy, včetně GDPR.
+    </p>
+
+    <hr />
+
+    <h2><span class="icon">✏️</span>8. Změny těchto zásad</h2>
+    <p>
+      Tyto zásady mohou být čas od času aktualizovány.
+      Doporučujeme tuto stránku pravidelně kontrolovat.
+    </p>
+
+    <hr />
+
+    <h2><span class="icon">📧</span>9. Kontakt</h2>
+    <div class="contact">
+      <p>
+        Máte-li jakékoli dotazy ohledně ochrany osobních údajů,
+        kontaktujte nás na:
+      </p>
+      <p>
+        <strong>E-mail:</strong>
+        <a href="mailto:noraapp@noraappinfo.com">noraapp@noraappinfo.com</a>
+      </p>
+    </div>
+
+  </main>
+</body>
+</html>
+

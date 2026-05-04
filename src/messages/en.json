@@ -1,0 +1,155 @@
+{
+  "homepage": {
+    "title": "Discover events around you",
+    "subtitle": "An interactive event map where businesses and organizers share the best from your surroundings.",
+    "map": "View map",
+    "download": "Download the app"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About the app",
+    "map": "Event map",
+    "download": "Download the app",
+    "qa": "Q&A"
+  },
+  "aboutPage": {
+    "badge": "About the app",
+    "title": "Get to know us better",
+    "intro": "Nora connects people with events around them. In one place, you can discover concerts, parties, sports events, cultural events and other interesting happenings nearby.",
+    "why": {
+      "title": "Why was this app created?",
+      "text": "We want to make it easier for people to find out what is happening around them. There is no need to search across multiple places anymore. Everything important is simple, clear and in one place."
+    },
+    "forWhom": {
+      "title": "Who is the app for?",
+      "text": "Mainly for people who want to discover new experiences, have fun, do sports, explore new places and meet new people. At the same time, it is also for businesses and organizers who want to make their events more visible and reach more people."
+    },
+    "easy": {
+      "title": "Is the app difficult to use?",
+      "text": "Not at all. Nora is designed to be simple, clear and easy to use. We want you to quickly find what you're looking for without unnecessary extra clicks."
+    },
+    "benefit": {
+      "title": "What is the biggest advantage?",
+      "text": "Everything is in one place. Instead of searching for a long time, you can simply open the map and instantly see what is happening around you — by location, date or event type."
+    },
+    "future": {
+      "title": "What do we want for the future?",
+      "text": "We want to create a space where people can easily discover interesting events around them and organizers have a simple way to reach their audience. The goal is to make discovering events fast, natural and clear."
+    },
+    "contact": {
+      "title": "Do you have a question, idea or feedback?",
+      "text": "We are open to suggestions on how to improve Nora. We will be happy if you write to us at"
+    }
+  },
+  "downloadPage": {
+    "badge": "Download the app",
+    "title": "Keep experiences always within reach",
+    "intro": "With Nora, the event map is always with you. Discover concerts, parties, sports and other interesting happenings quickly, clearly and anytime you need.",
+    "googlePlay": "Download on Google Play",
+    "appStore": "Download on the App Store",
+    "benefits": {
+      "always": {
+        "title": "Always with you",
+        "text": "Stay informed about events anytime and anywhere."
+      },
+      "fast": {
+        "title": "Quick discovery",
+        "text": "Find interesting events in just a few seconds."
+      },
+      "clear": {
+        "title": "Clear on the map",
+        "text": "Everything important in one place."
+      }
+    },
+    "outro": "Choose your platform and discover what’s happening around you."
+  },
+  "mapSection": {
+    "badge": "Event map",
+    "title": "All events clearly in one place",
+    "text": "Open the map and instantly see what’s happening around you."
+  },
+  "qaSection": {
+    "title": "Frequently asked questions"
+  },
+  "legal": {
+    "back": "Back",
+    "terms": "Terms of Use",
+    "privacy": "Privacy Policy"
+  },
+  
+  "mapPage": {
+    "title": "Event map",
+    "back": "Back",
+    "close": "Close",
+    "searchPlaceholder": "Search for a city, club or event...",
+    "loadingMap": "Loading map...",
+    "loadingData": "Loading data...",
+    "loadingLocation": "Getting your location...",
+    "myLocation": "My location",
+    "detail": "Show detail",
+    "noImage": "No image",
+    "empty": "No matching events were found.",
+    "categories": {
+      "concert": "Concert",
+      "party": "Party",
+      "festival": "Festival",
+      "sport": "Sport",
+      "theatre": "Theatre",
+      "cinema": "Cinema",
+      "art": "Art",
+      "food": "Food",
+      "kids": "Kids",
+      "family": "Family",
+      "workshop": "Workshop",
+      "lecture": "Lecture",
+      "networking": "Networking",
+      "market": "Market",
+      "community": "Community",
+      "charity": "Charity",
+      "outdoor": "Outdoor",
+      "wellness": "Wellness",
+      "other": "Other"
+    },
+    "dateFilters": {
+      "any": "Any time",
+      "today": "Today",
+      "tomorrow": "Tomorrow",
+      "week": "This week",
+      "custom": "Custom date"
+    },
+    "eventModeFilters": {
+      "all": "All",
+      "single": "One-time",
+      "recurring": "Recurring"
+    },
+    "priceFilters": {
+      "all": "All",
+      "free": "Free",
+      "paid": "Paid"
+    },
+    "filters": {
+      "open": "Open filters",
+      "title": "Filters",
+      "categoriesTitle": "Event type",
+      "eventModeTitle": "Event mode",
+      "priceTitle": "Price",
+      "dateTitle": "Date",
+      "allCategories": "All",
+      "reset": "Reset",
+      "apply": "Apply"
+    },
+    "errors": {
+      "googleMaps": "Failed to load Google Maps.",
+      "firestore": "Failed to load events.",
+      "placeNotFound": "The place could not be found.",
+      "locationUnavailable": "Geolocation is not available on this device.",
+      "locationDenied": "Location access was denied or the location could not be obtained."
+    },
+    "locationPrompt": {
+      "title": "Use my location?",
+      "description": "After confirming, your browser may ask for permission to access your location. If you allow it, the map will zoom to your current position.",
+      "cancel": "Cancel",
+      "confirm": "Continue"
+    }
+  }
+}

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Nutzungsbedingungen – NORA</title>
+
+  <!-- SEO / Sharing -->
+  <meta name="description" content="Nutzungsbedingungen für die NORA-App – Konto, Verifizierung, Haftung, Moderation und Änderungen." />
+  <meta property="og:title" content="Nutzungsbedingungen – NORA" />
+  <meta property="og:description" content="Nutzungsbedingungen für die NORA-App: Konto, Verifizierung, Haftung, Moderation und Änderungen." />
+  <meta property="og:type" content="article" />
+  <meta name="robots" content="index,follow" />
+
+  <!-- ✅ Versioning: edit only here -->
+  <meta name="nora-doc" content="terms" />
+  <meta name="nora-version" content="1.1" />
+  <meta name="nora-updated" content="2026-05-04" />
+  <meta name="nora-effective" content="2026-05-04" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: #fafafa;
+      color: #222;
+      margin: 0;
+      padding: 0;
+      line-height: 1.65;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 32px 20px 64px;
+      background: #ffffff;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .meta {
+      color: #666;
+      font-size: 14px;
+      margin-bottom: 22px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .meta-pill {
+      display: inline-flex;
+      gap: 6px;
+      align-items: center;
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid #e5e7eb;
+      background: #f3f4f6;
+      font-size: 12px;
+      color: #444;
+      font-weight: 600;
+    }
+
+    .meta-pill strong {
+      font-weight: 800;
+      color: #111;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin-top: 34px;
+      margin-bottom: 12px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    p { margin: 0 0 12px; }
+    ul { padding-left: 20px; margin-top: 8px; }
+    li { margin-bottom: 6px; }
+
+    hr {
+      border: none;
+      border-top: 1px solid #e0e0e0;
+      margin: 30px 0;
+    }
+
+    .icon { font-size: 20px; }
+
+    .note {
+      background: #f3f4f6;
+      padding: 14px;
+      border-radius: 10px;
+      border: 1px solid #e5e7eb;
+      margin-top: 12px;
+    }
+
+    .warn {
+      background: #fff7ed;
+      padding: 14px;
+      border-radius: 10px;
+      border: 1px solid #fed7aa;
+      margin-top: 12px;
+    }
+
+    .small {
+      font-size: 14px;
+      color: #555;
+    }
+
+    a { color: #2563eb; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    code {
+      background: #f3f4f6;
+      padding: 2px 6px;
+      border-radius: 6px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size: 13px;
+    }
+  </style>
+
+  <script>
+    // ✅ Fill version/dates from meta tags
+    (function () {
+      function getMeta(name) {
+        var el = document.querySelector('meta[name="' + name + '"]');
+        return el ? el.getAttribute('content') : '';
+      }
+
+      function formatDateISO(iso) {
+        if (!iso || !/^\d{4}-\d{2}-\d{2}$/.test(iso)) return iso || '';
+        var p = iso.split('-');
+        return p[2] + '. ' + p[1] + '. ' + p[0];
+      }
+
+      document.addEventListener('DOMContentLoaded', function () {
+        var version = getMeta('nora-version');
+        var updated = getMeta('nora-updated');
+        var effective = getMeta('nora-effective');
+
+        var vEl = document.getElementById('noraVersion');
+        var uEl = document.getElementById('noraUpdated');
+        var eEl = document.getElementById('noraEffective');
+
+        if (vEl && version) vEl.textContent = version;
+        if (uEl && updated) uEl.textContent = formatDateISO(updated);
+        if (eEl && effective) eEl.textContent = formatDateISO(effective);
+      });
+    })();
+  </script>
+</head>
+
+<body>
+  <main class="container">
+    <h1>📄 Nutzungsbedingungen – NORA</h1>
+
+    <div class="meta">
+      <span class="meta-pill">Version: <strong id="noraVersion">1.1</strong></span>
+      <span class="meta-pill">Letzte Aktualisierung: <strong id="noraUpdated">04. 05. 2026</strong></span>
+      <span class="meta-pill">Gültig ab: <strong id="noraEffective">04. 05. 2026</strong></span>
+      <noscript>
+        <span class="meta-pill">Hinweis: Für die automatische Anzeige der Metadaten ist JavaScript erforderlich.</span>
+      </noscript>
+    </div>
+
+    <p>
+      Diese Nutzungsbedingungen („<strong>Bedingungen</strong>“) regeln den Zugriff auf und die Nutzung der mobilen Anwendung
+      <strong>NORA</strong> (die „<strong>App</strong>“ bzw. der „<strong>Dienst</strong>“). Durch den Zugriff auf oder die Nutzung des Dienstes bestätigen Sie,
+      dass Sie diese Bedingungen gelesen, verstanden und akzeptiert haben. Wenn Sie nicht zustimmen, nutzen Sie den Dienst nicht.
+    </p>
+
+    <div class="warn small">
+      <strong>WICHTIG – BETA/TESTVERSION:</strong> Der Dienst wird als <strong>Test-/Beta-/Probeversion</strong> bereitgestellt.
+      Funktionen können jederzeit geändert, eingeschränkt, vorübergehend nicht verfügbar oder dauerhaft eingestellt werden.
+      Der Betreiber kann den Dienst (oder Teile davon) jederzeit <strong>ändern, einschränken, aussetzen oder beenden</strong>,
+      mit oder ohne vorherige Ankündigung.
+    </div>
+
+    <hr />
+
+    <h2><span class="icon">🧭</span>1. Zweck des Dienstes (und Grenzen)</h2>
+    <p>
+      NORA ist eine Plattform, auf der Nutzer Veranstaltungen veröffentlichen und entdecken können. Der Betreiber ist <strong>nicht</strong>
+      Veranstalter, Promoter oder Garant einer Veranstaltung und überprüft nicht die Richtigkeit, Rechtmäßigkeit, Qualität, Sicherheit
+      oder Verfügbarkeit von Veranstaltungen. Die Teilnahme an Veranstaltungen erfolgt auf eigenes Risiko.
+    </p>
+
+    <hr />
+
+    <h2><span class="icon">👤</span>2. Konto und Verifizierung</h2>
+    <p>
+      Jeder Nutzer muss verifiziert sein – Mitglied, Unternehmen sowie Veranstalter. Die Verifizierung erfolgt über eine E-Mail-Adresse oder Telefonnummer.
+    </p>
+    <p class="small">
+      Verifizierungsbedingungen können sich je nach Sicherheits- und Betriebsanforderungen ändern.
+    </p>
+
+    <hr />
+
+    <h2><span class="icon">📍</span>3. Standort und Berechtigungen</h2>
+    <p>
+      Der Dienst kann standortbasierte Funktionen anbieten (z. B. relevante Veranstaltungen anzeigen). Die Standortfreigabe ist <strong>freiwillig</strong>
+      und kann in den Geräteeinstellungen verwaltet werden. Bestimmte Funktionen können ohne Berechtigungen nicht verfügbar sein.
+    </p>
+
+    <hr />
+
+    <h2><span class="icon">📣</span>4. Nutzerinhalte, Veranstaltungen und Pflichten</h2>
+    <p>
+      Sie sind allein verantwortlich für alle von Ihnen bereitgestellten Inhalte (einschließlich Veranstaltungsdetails, Beschreibungen, Bilder und Profilangaben).
+      Sie verpflichten sich, keine Inhalte einzustellen, die rechtswidrig, irreführend, betrügerisch, doppelt, spamartig, belästigend, verletzend oder anderweitig unzulässig sind.
+    </p>
+    <p class="small">
+      Detaillierte Regeln zu Veranstaltungen, Profilen und Moderation sind im Dokument <strong>Regeln</strong> festgelegt. Diese Regeln sind Bestandteil dieser Bedingungen.
+    </p>
+
+    <hr />
+
+    <h2><span class="icon">🛡️</span>5. Moderation, Durchsetzung und Rechte des Betreibers</h2>
+    <p>
+      Der Betreiber kann (ist aber nicht verpflichtet) Inhalte und Konten überwachen, prüfen und moderieren. Der Betreiber kann nach eigenem Ermessen und ohne vorherige Ankündigung:
+    </p>
+    <ul>
+      <li>Inhalte entfernen, bearbeiten, einschränken oder deaktivieren,</li>
+      <li>Funktionen einschränken (z. B. das Erstellen von Veranstaltungen sperren),</li>
+      <li>zusätzliche Verifizierung/erneute Verifizierung verlangen,</li>
+      <li>Konten vorübergehend sperren oder dauerhaft kündigen,</li>
+      <li>den Zugang zum Dienst einschränken oder beenden.</li>
+    </ul>
+
+    <div class="note small">
+      Maßnahmen sind nicht im Voraus festgelegt und können je nach Schwere, Risiko, Sicherheitsbedarf, Rechtskonformität oder betrieblichen Gründen angewendet werden.
+      Es besteht kein Rechtsanspruch auf ein Konto, einen Status, Inhalte oder die weitere Nutzung bestimmter Funktionen.
+    </div>
+
+    <hr />
+
+    <h2><span class="icon">🚫</span>6. Verfügbarkeit, „AS IS“, Haftungsausschlüsse</h2>
+    <p>
+      Der Dienst wird insbesondere als Test-/Betaversion auf Basis „<strong>WIE BESEHEN</strong>“ („AS IS“) und „<strong>WIE VERFÜGBAR</strong>“ („AS AVAILABLE“) bereitgestellt.
+      Der Betreiber übernimmt keinerlei Gewährleistung (ausdrücklich oder stillschweigend), einschließlich Eignung für einen bestimmten Zweck, Nichtverletzung von Rechten Dritter oder
+      ununterbrochener, rechtzeitiger, sicherer oder fehlerfreier Verfügbarkeit.
+    </p>
+    <p>
+      Der Betreiber garantiert nicht, dass der Dienst (oder Inhalte) jederzeit korrekt, vollständig, zuverlässig oder verfügbar ist. Nutzung erfolgt auf eigenes Risiko.
+    </p>
+
+    <hr />
+
+    <h2><span class="icon">⚠️</span>7. Haftungsbeschränkung</h2>
+    <p>
+      Soweit gesetzlich zulässig haftet der Betreiber nicht für indirekte, zufällige, besondere, Folge-, exemplarische oder Strafschäden sowie nicht für entgangenen Gewinn,
+      Datenverlust, Verlust von Goodwill oder sonstige immaterielle Verluste, die aus oder im Zusammenhang mit der Nutzung des Dienstes entstehen.
+    </p>
+    <p class="small">
+      Ohne Einschränkung gilt dies auch für Streitigkeiten zwischen Nutzern, Veranstaltern oder Dritten sowie für Schäden aus der Teilnahme an Veranstaltungen oder dem Vertrauen auf nutzergenerierte Inhalte.
+    </p>
+
+    <hr />
+
+    <h2><span class="icon">🔄</span>8. Änderungen dieser Bedingungen</h2>
+    <p>
+      Der Betreiber kann diese Bedingungen jederzeit aktualisieren. Die aktualisierte Version wird auf dieser Seite veröffentlicht (inklusive Version und Datum der Wirksamkeit).
+      In bestimmten Fällen kann die App eine erneute Zustimmung verlangen. Wenn Sie den Dienst nach dem Wirksamkeitsdatum weiter nutzen, stimmen Sie den aktualisierten Bedingungen zu,
+      sofern gesetzlich nichts anderes vorgeschrieben ist.
+    </p>
+
+    <hr />
+
+    <h2><span class="icon">📎</span>9. Zugehörige Dokumente</h2>
+    <p>Diese Bedingungen werden ergänzt durch:</p>
+    <ul>
+      <li><strong>Datenschutzerklärung</strong> (Privacy Policy)</li>
+      <li><strong>Regeln</strong> (Veranstaltungen, Profile, Moderation)</li>
+      <li><strong>Konto- und Datenlöschung</strong> (Delete Account)</li>
+    </ul>
+    <p class="small">
+      Im Konfliktfall hat der vollständige Text dieser Dokumente Vorrang vor Zusammenfassungen in der App.
+    </p>
+
+    <hr />
+
+    <h2><span class="icon">📧</span>10. Kontakt</h2>
+    <p>Fragen zu diesen Bedingungen richten Sie bitte an:</p>
+    <p>
+      <strong>E-Mail:</strong>
+      <a href="mailto:noraapp@noraappinfo.com">noraapp@noraappinfo.com</a>
+    </p>
+
+  </main>
+</body>
+</html>

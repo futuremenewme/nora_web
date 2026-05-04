@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Podmínky používání – NORA</title>
+
+  <!-- SEO / Sharing (volitelné, ale užitečné) -->
+  <meta name="description" content="Podmínky používání aplikace NORA – účet, ověření, odpovědnost, moderace a změny podmínek." />
+  <meta property="og:title" content="Podmínky používání – NORA" />
+  <meta property="og:description" content="Podmínky používání aplikace NORA: účet, ověření, odpovědnost, moderace a změny." />
+  <meta property="og:type" content="article" />
+  <meta name="robots" content="index,follow" />
+
+  <!-- ✅ Versioning: měníš jen tady -->
+  <meta name="nora-doc" content="terms" />
+  <meta name="nora-version" content="1.1" />
+  <meta name="nora-updated" content="2026-05-04" />
+  <meta name="nora-effective" content="2026-05-04" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: #fafafa;
+      color: #222;
+      margin: 0;
+      padding: 0;
+      line-height: 1.65;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 32px 20px 64px;
+      background: #ffffff;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    /* ✅ jednotné metadatové "pilulky" */
+    .meta {
+      color: #666;
+      font-size: 14px;
+      margin-bottom: 22px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .meta-pill {
+      display: inline-flex;
+      gap: 6px;
+      align-items: center;
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid #e5e7eb;
+      background: #f3f4f6;
+      font-size: 12px;
+      color: #444;
+      font-weight: 600;
+    }
+
+    .meta-pill strong {
+      font-weight: 800;
+      color: #111;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin-top: 34px;
+      margin-bottom: 12px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    p { margin: 0 0 12px; }
+    ul { padding-left: 20px; margin-top: 8px; }
+    li { margin-bottom: 6px; }
+
+    hr {
+      border: none;
+      border-top: 1px solid #e0e0e0;
+      margin: 30px 0;
+    }
+
+    .icon { font-size: 20px; }
+
+    .note {
+      background: #f3f4f6;
+      padding: 14px;
+      border-radius: 10px;
+      border: 1px solid #e5e7eb;
+      margin-top: 12px;
+    }
+
+    .warn {
+      background: #fff7ed;
+      padding: 14px;
+      border-radius: 10px;
+      border: 1px solid #fed7aa;
+      margin-top: 12px;
+    }
+
+    .small {
+      font-size: 14px;
+      color: #555;
+    }
+
+    a { color: #2563eb; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    code {
+      background: #f3f4f6;
+      padding: 2px 6px;
+      border-radius: 6px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size: 13px;
+    }
+  </style>
+
+  <script>
+    // ✅ Zobrazí verzi/datum/účinnost na stránce z meta tagů.
+    (function () {
+      function getMeta(name) {
+        var el = document.querySelector('meta[name="' + name + '"]');
+        return el ? el.getAttribute('content') : '';
+      }
+
+      function formatDateISOToCZ(iso) {
+        // očekává YYYY-MM-DD
+        if (!iso || !/^\d{4}-\d{2}-\d{2}$/.test(iso)) return iso || '';
+        var parts = iso.split('-');
+        var y = parts[0], m = parts[1], d = parts[2];
+        return d + '. ' + m + '. ' + y;
+      }
+
+      document.addEventListener('DOMContentLoaded', function () {
+        var version = getMeta('nora-version');
+        var updated = getMeta('nora-updated');
+        var effective = getMeta('nora-effective');
+
+        var vEl = document.getElementById('noraVersion');
+        var uEl = document.getElementById('noraUpdated');
+        var eEl = document.getElementById('noraEffective');
+
+        if (vEl && version) vEl.textContent = version;
+        if (uEl && updated) uEl.textContent = formatDateISOToCZ(updated);
+        if (eEl && effective) eEl.textContent = formatDateISOToCZ(effective);
+      });
+    })();
+  </script>
+</head>
+
+<body>
+  <main class="container">
+    <h1>📄 Podmínky používání – NORA</h1>
+
+    <!-- ✅ automaticky se naplní z meta tagů -->
+    <div class="meta">
+      <span class="meta-pill">Verze: <strong id="noraVersion">1.1</strong></span>
+      <span class="meta-pill">Poslední aktualizace: <strong id="noraUpdated">04. 05. 2026</strong></span>
+      <span class="meta-pill">Platné od: <strong id="noraEffective">04. 05. 2026</strong></span>
+
+      <noscript>
+        <span class="meta-pill">Pozn.: Pro automatické doplnění metadat je potřeba JavaScript.</span>
+      </noscript>
+    </div>
+
+    <p>
+      Tyto Podmínky používání („<strong>Podmínky</strong>“) upravují přístup a používání mobilní aplikace
+      <strong>NORA</strong> („<strong>aplikace</strong>“, „<strong>služba</strong>“).
+      Používáním aplikace potvrzujete, že jste se s Podmínkami seznámili a souhlasíte s nimi.
+      Pokud s Podmínkami nesouhlasíte, aplikaci nepoužívejte.
+    </p>
+
+    <div class="note small">
+      <strong>Důležité:</strong> Aplikace NORA je v této fázi poskytována jako <strong>demo/testovací verze</strong>.
+      Funkce se mohou měnit, být dočasně nedostupné nebo může být služba kdykoli ukončena.
+    </div>
+
+    <hr />
+
+    <h2><span class="icon">🧭</span>1. Co aplikace dělá</h2>
+    <p>
+      NORA slouží jako platforma pro přidávání a zobrazování událostí. Aplikace není organizátorem událostí
+      a neodpovídá za jejich průběh, změny, zrušení ani za škody vzniklé účastí na událostech.
+    </p>
+
+    <hr />
+
+    <h2><span class="icon">👤</span>2. Účet a ověření</h2>
+    <p>
+      Ověřený musí být každý uživatel – člen, podnik i organizátor. Ověření probíhá pomocí e-mailu či telefonního čísla.
+    </p>
+    <p class="small">
+      Podmínky ověřování se mohou měnit v závislosti na bezpečnostních a provozních potřebách.
+    </p>
+
+    <hr />
+
+    <h2><span class="icon">📍</span>3. Poloha</h2>
+    <p>
+      Aplikace může nabízet funkci potvrzení polohy pro zobrazení relevantního obsahu.
+      Poskytnutí polohy je <strong>dobrovolné</strong> a lze jej spravovat v nastavení zařízení.
+    </p>
+
+    <hr />
+
+    <h2><span class="icon">📣</span>4. Obsah, události a odpovědnost</h2>
+    <p>
+      Uživatel odpovídá za obsah, který do aplikace vkládá (zejména události, popisy, obrázky).
+      Uživatel se zavazuje nevkládat obsah, který je nezákonný, klamavý, duplicitní, obtěžující nebo jinak nevhodný.
+    </p>
+    <p class="small">
+      Pro detailní pravidla přidávání událostí a profilů viz <strong>Pravidla aplikace</strong>.
+    </p>
+
+    <hr />
+
+    <h2><span class="icon">🛡️</span>5. Moderace a práva provozovatele</h2>
+    <p>
+      Provozovatel je oprávněn (nikoli povinen) monitorovat a moderovat obsah a uživatele.
+      Provozovatel si vyhrazuje právo dle vlastního uvážení:
+    </p>
+    <ul>
+      <li>odstranit nebo upravit jakýkoli obsah (včetně událostí),</li>
+      <li>omezit funkce uživatele (např. zákaz přidávání událostí),</li>
+      <li>dočasně nebo trvale zablokovat účet,</li>
+      <li>zrušit a smazat účet,</li>
+      <li>požadovat opětovné ověření.</li>
+    </ul>
+
+    <div class="note small">
+      Opatření nejsou předem pevně stanovena. Provozovatel rozhoduje individuálně podle okolností a závažnosti.
+      Na zachování účtu, statusu ani obsahu nevzniká právní nárok.
+    </div>
+
+    <hr />
+
+    <h2><span class="icon">🚫</span>6. Dostupnost služby a ukončení</h2>
+    <p>
+      Aplikace je poskytována „<strong>tak jak je</strong>“ a „<strong>tak jak je dostupná</strong>“.
+      Provozovatel nezaručuje nepřetržitou dostupnost ani bezchybnost. Vzhledem k tomu, že jde o demo/testovací verzi,
+      mohou nastat výpadky, změny nebo ukončení služby.
+    </p>
+
+    <hr />
+
+    <h2><span class="icon">🔄</span>7. Změny podmínek</h2>
+    <p>
+      Provozovatel může Podmínky kdykoli aktualizovat. Aktualizovaná verze bude zveřejněna na této stránce
+      (včetně data účinnosti a verze). V některých případech může být vyžadován nový souhlas v aplikaci.
+    </p>
+
+    <hr />
+
+    <h2><span class="icon">📎</span>8. Související dokumenty</h2>
+    <p>
+      Tyto Podmínky jsou doplněny následujícími dokumenty:
+    </p>
+    <ul>
+      <li><strong>Zásady ochrany osobních údajů</strong> (Privacy Policy)</li>
+      <li><strong>Pravidla aplikace</strong> (události, profily, moderace)</li>
+      <li><strong>Smazání účtu a dat</strong> (Delete Account)</li>
+    </ul>
+    <p class="small">
+      V případě rozporu mezi shrnutími v aplikaci a plným zněním těchto dokumentů má přednost plné znění dokumentů.
+    </p>
+
+    <hr />
+
+    <h2><span class="icon">📧</span>9. Kontakt</h2>
+    <p>
+      Dotazy k Podmínkám nebo k používání aplikace směřujte na:
+    </p>
+    <p>
+      <strong>E-mail:</strong>
+      <a href="mailto:noraapp@noraappinfo.com">noraapp@noraappinfo.com</a>
+    </p>
+
+  </main>
+</body>
+</html>
+

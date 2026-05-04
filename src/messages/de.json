@@ -1,0 +1,155 @@
+{
+  "homepage": {
+    "title": "Entdecke Events in deiner Nähe",
+    "subtitle": "Eine interaktive Eventkarte, auf der Unternehmen und Veranstalter das Beste aus deiner Umgebung teilen.",
+    "map": "Karte anzeigen",
+    "download": "App herunterladen"
+  },
+  "nav": {
+    "home": "Startseite",
+    "about": "Über die App",
+    "map": "Eventkarte",
+    "download": "App herunterladen",
+    "qa": "Q&A"
+  },
+  "aboutPage": {
+    "badge": "Über die App",
+    "title": "Lerne uns besser kennen",
+    "intro": "Nora verbindet Menschen mit Events in ihrer Umgebung. An einem Ort findest du Konzerte, Partys, Sportveranstaltungen, kulturelle Events und weitere interessante Aktivitäten in deiner Nähe.",
+    "why": {
+      "title": "Warum wurde diese App entwickelt?",
+      "text": "Wir möchten es einfacher machen, herauszufinden, was in deiner Umgebung passiert. Es ist nicht mehr nötig, an mehreren Orten zu suchen. Alles Wichtige findest du einfach, übersichtlich und an einem Ort."
+    },
+    "forWhom": {
+      "title": "Für wen ist die App gedacht?",
+      "text": "Vor allem für Menschen, die neue Erlebnisse entdecken, Spaß haben, Sport treiben, neue Orte kennenlernen und neue Leute treffen möchten. Gleichzeitig ist sie auch für Unternehmen und Veranstalter gedacht, die ihre Events sichtbarer machen und mehr Menschen erreichen möchten."
+    },
+    "easy": {
+      "title": "Ist die App kompliziert zu bedienen?",
+      "text": "Überhaupt nicht. Nora ist so gestaltet, dass sie einfach, übersichtlich und leicht zu bedienen ist. Du findest schnell, was du suchst – ohne unnötige Klicks."
+    },
+    "benefit": {
+      "title": "Was ist der größte Vorteil?",
+      "text": "Alles an einem Ort. Statt lange zu suchen, kannst du einfach die Karte öffnen und sofort sehen, was in deiner Umgebung passiert — nach Ort, Datum oder Eventtyp."
+    },
+    "future": {
+      "title": "Was wollen wir in Zukunft erreichen?",
+      "text": "Wir möchten einen Ort schaffen, an dem Menschen leicht interessante Events entdecken und Veranstalter ihr Publikum einfach erreichen können. Ziel ist es, das Entdecken von Events schnell, natürlich und übersichtlich zu machen."
+    },
+    "contact": {
+      "title": "Hast du eine Frage, Idee oder Feedback?",
+      "text": "Wir sind offen für Vorschläge, wie wir Nora weiter verbessern können. Schreib uns gerne an"
+    }
+  },
+  "downloadPage": {
+    "badge": "App herunterladen",
+    "title": "Hab Erlebnisse immer griffbereit",
+    "intro": "Mit Nora hast du die Eventkarte immer dabei. Entdecke Konzerte, Partys, Sport und weitere spannende Events schnell, übersichtlich und genau dann, wenn du sie brauchst.",
+    "googlePlay": "Bei Google Play herunterladen",
+    "appStore": "Im App Store herunterladen",
+    "benefits": {
+      "always": {
+        "title": "Immer dabei",
+        "text": "Behalte Events jederzeit und überall im Blick."
+      },
+      "fast": {
+        "title": "Schnell entdecken",
+        "text": "Finde interessante Events in wenigen Sekunden."
+      },
+      "clear": {
+        "title": "Übersichtlich auf der Karte",
+        "text": "Alles Wichtige an einem Ort."
+      }
+    },
+    "outro": "Wähle deine Plattform und entdecke, was um dich herum passiert."
+  },
+  "mapSection": {
+    "badge": "Eventkarte",
+    "title": "Alle Events übersichtlich an einem Ort",
+    "text": "Öffne die Karte und sieh sofort, was in deiner Umgebung passiert."
+  },
+  "qaSection": {
+    "title": "Häufig gestellte Fragen"
+  },
+  "legal": {
+    "back": "Zurück",
+    "terms": "Nutzungsbedingungen",
+    "privacy": "Datenschutz"
+  },
+  
+  "mapPage": {
+    "title": "Eventkarte",
+    "back": "Zurück",
+    "close": "Schließen",
+    "searchPlaceholder": "Stadt, Club oder Event suchen...",
+    "loadingMap": "Karte wird geladen...",
+    "loadingData": "Daten werden geladen...",
+    "loadingLocation": "Dein Standort wird ermittelt...",
+    "myLocation": "Mein Standort",
+    "detail": "Details anzeigen",
+    "noImage": "Kein Bild",
+    "empty": "Keine passenden Events gefunden.",
+    "categories": {
+      "concert": "Konzert",
+      "party": "Party",
+      "festival": "Festival",
+      "sport": "Sport",
+      "theatre": "Theater",
+      "cinema": "Kino",
+      "art": "Kunst",
+      "food": "Gastro",
+      "kids": "Kinder",
+      "family": "Familie",
+      "workshop": "Workshop",
+      "lecture": "Vortrag",
+      "networking": "Networking",
+      "market": "Markt",
+      "community": "Community",
+      "charity": "Charity",
+      "outdoor": "Outdoor",
+      "wellness": "Wellness",
+      "other": "Sonstiges"
+    },
+    "dateFilters": {
+      "any": "Jederzeit",
+      "today": "Heute",
+      "tomorrow": "Morgen",
+      "week": "Diese Woche",
+      "custom": "Eigenes Datum"
+    },
+    "eventModeFilters": {
+      "all": "Alle",
+      "single": "Einmalig",
+      "recurring": "Wiederkehrend"
+    },
+    "priceFilters": {
+      "all": "Alle",
+      "free": "Kostenlos",
+      "paid": "Bezahlt"
+    },
+    "filters": {
+      "open": "Filter öffnen",
+      "title": "Filter",
+      "categoriesTitle": "Eventtyp",
+      "eventModeTitle": "Eventmodus",
+      "priceTitle": "Preis",
+      "dateTitle": "Datum",
+      "allCategories": "Alle",
+      "reset": "Zurücksetzen",
+      "apply": "Anwenden"
+    },
+    "errors": {
+      "googleMaps": "Google Maps konnte nicht geladen werden.",
+      "firestore": "Events konnten nicht geladen werden.",
+      "placeNotFound": "Der Ort konnte nicht gefunden werden.",
+      "locationUnavailable": "Geolokalisierung ist auf diesem Gerät nicht verfügbar.",
+      "locationDenied": "Der Zugriff auf den Standort wurde verweigert oder der Standort konnte nicht ermittelt werden."
+    },
+    "locationPrompt": {
+      "title": "Meinen Standort verwenden?",
+      "description": "Nach der Bestätigung kann dein Browser nach der Erlaubnis fragen, auf deinen Standort zuzugreifen. Wenn du zustimmst, zoomt die Karte auf deine aktuelle Position.",
+      "cancel": "Abbrechen",
+      "confirm": "Weiter"
+    }
+  }
+}

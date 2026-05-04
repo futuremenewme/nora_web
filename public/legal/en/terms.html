@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Terms of Use – NORA</title>
+
+  <!-- SEO / Sharing -->
+  <meta name="description" content="Terms of Use for the NORA mobile application – account, verification, liability, moderation, and changes." />
+  <meta property="og:title" content="Terms of Use – NORA" />
+  <meta property="og:description" content="Terms of Use for the NORA mobile application: account, verification, liability, moderation, and changes." />
+  <meta property="og:type" content="article" />
+  <meta name="robots" content="index,follow" />
+
+  <!-- ✅ Versioning: edit only here -->
+  <meta name="nora-doc" content="terms" />
+  <meta name="nora-version" content="1.1" />
+  <meta name="nora-updated" content="2026-05-04" />
+  <meta name="nora-effective" content="2026-05-04" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: #fafafa;
+      color: #222;
+      margin: 0;
+      padding: 0;
+      line-height: 1.65;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 32px 20px 64px;
+      background: #ffffff;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .meta {
+      color: #666;
+      font-size: 14px;
+      margin-bottom: 22px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .meta-pill {
+      display: inline-flex;
+      gap: 6px;
+      align-items: center;
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid #e5e7eb;
+      background: #f3f4f6;
+      font-size: 12px;
+      color: #444;
+      font-weight: 600;
+    }
+
+    .meta-pill strong {
+      font-weight: 800;
+      color: #111;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin-top: 34px;
+      margin-bottom: 12px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    p { margin: 0 0 12px; }
+    ul { padding-left: 20px; margin-top: 8px; }
+    li { margin-bottom: 6px; }
+
+    hr {
+      border: none;
+      border-top: 1px solid #e0e0e0;
+      margin: 30px 0;
+    }
+
+    .icon { font-size: 20px; }
+
+    .note {
+      background: #f3f4f6;
+      padding: 14px;
+      border-radius: 10px;
+      border: 1px solid #e5e7eb;
+      margin-top: 12px;
+    }
+
+    .warn {
+      background: #fff7ed;
+      padding: 14px;
+      border-radius: 10px;
+      border: 1px solid #fed7aa;
+      margin-top: 12px;
+    }
+
+    .small {
+      font-size: 14px;
+      color: #555;
+    }
+
+    a { color: #2563eb; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    code {
+      background: #f3f4f6;
+      padding: 2px 6px;
+      border-radius: 6px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size: 13px;
+    }
+  </style>
+
+  <script>
+    // ✅ Fill version/dates from meta tags
+    (function () {
+      function getMeta(name) {
+        var el = document.querySelector('meta[name="' + name + '"]');
+        return el ? el.getAttribute('content') : '';
+      }
+
+      function formatDateISO(iso) {
+        // expects YYYY-MM-DD -> DD. MM. YYYY
+        if (!iso || !/^\d{4}-\d{2}-\d{2}$/.test(iso)) return iso || '';
+        var p = iso.split('-');
+        return p[2] + '. ' + p[1] + '. ' + p[0];
+      }
+
+      document.addEventListener('DOMContentLoaded', function () {
+        var version = getMeta('nora-version');
+        var updated = getMeta('nora-updated');
+        var effective = getMeta('nora-effective');
+
+        var vEl = document.getElementById('noraVersion');
+        var uEl = document.getElementById('noraUpdated');
+        var eEl = document.getElementById('noraEffective');
+
+        if (vEl && version) vEl.textContent = version;
+        if (uEl && updated) uEl.textContent = formatDateISO(updated);
+        if (eEl && effective) eEl.textContent = formatDateISO(effective);
+      });
+    })();
+  </script>
+</head>
+
+<body>
+  <main class="container">
+    <h1>📄 Terms of Use – NORA</h1>
+
+    <div class="meta">
+      <span class="meta-pill">Version: <strong id="noraVersion">1.1</strong></span>
+      <span class="meta-pill">Last updated: <strong id="noraUpdated">04. 05. 2026</strong></span>
+      <span class="meta-pill">Effective from: <strong id="noraEffective">04. 05. 2026</strong></span>
+      <noscript>
+        <span class="meta-pill">Note: JavaScript is required to auto-fill metadata.</span>
+      </noscript>
+    </div>
+
+    <p>
+      These Terms of Use (“<strong>Terms</strong>”) govern access to and use of the <strong>NORA</strong> mobile application
+      (the “<strong>App</strong>” or “<strong>Service</strong>”). By accessing or using the Service, you confirm that you have read,
+      understood, and agree to be bound by these Terms. If you do not agree, do not use the Service.
+    </p>
+
+    <div class="warn small">
+      <strong>IMPORTANT – BETA / TRIAL SERVICE:</strong> The Service is provided as a <strong>test / beta / trial version</strong>.
+      Features may change at any time, be limited, temporarily unavailable, or permanently discontinued. The operator may
+      <strong>modify, restrict, suspend, or terminate</strong> the Service (or any part of it) at any time, with or without notice.
+    </div>
+
+    <hr />
+
+    <h2><span class="icon">🧭</span>1. What the Service Does (and Does Not Do)</h2>
+    <p>
+      NORA is a platform for users to publish and discover events. The operator is <strong>not</strong> an organizer, promoter,
+      or guarantor of any event and does not verify the accuracy, legality, quality, safety, or availability of events.
+      Participation in events is at your own risk.
+    </p>
+
+    <hr />
+
+    <h2><span class="icon">👤</span>2. Account and Verification</h2>
+    <p>
+      Every user must be verified – member, business, and organizer alike. Verification is carried out using an email address or phone number.
+    </p>
+    <p class="small">
+      Verification requirements may change depending on security and operational needs.
+    </p>
+
+    <hr />
+
+    <h2><span class="icon">📍</span>3. Location and Permissions</h2>
+    <p>
+      The Service may offer location-based features (e.g., showing relevant events). Sharing your location is <strong>optional</strong>
+      and can be managed in your device settings. Some features may not work if permissions are denied.
+    </p>
+
+    <hr />
+
+    <h2><span class="icon">📣</span>4. User Content, Events, and Your Responsibilities</h2>
+    <p>
+      You are solely responsible for all content you submit (including event details, descriptions, images, and profile information).
+      You agree not to post content that is unlawful, misleading, fraudulent, duplicative, spammy, harassing, infringing, or otherwise
+      inappropriate.
+    </p>
+    <p class="small">
+      Detailed rules for events, profiles, and moderation are set out in the <strong>Rules</strong> document. Those rules are part of these Terms.
+    </p>
+
+    <hr />
+
+    <h2><span class="icon">🛡️</span>5. Moderation, Enforcement, and Operator Rights</h2>
+    <p>
+      The operator may (but is not obligated to) monitor, review, and moderate content and user accounts. The operator may, at its
+      sole discretion and without prior notice:
+    </p>
+    <ul>
+      <li>remove, edit, restrict, or disable any content,</li>
+      <li>limit user features (e.g., block event posting),</li>
+      <li>require additional verification or re-verification,</li>
+      <li>suspend or permanently terminate accounts,</li>
+      <li>restrict or terminate access to the Service.</li>
+    </ul>
+
+    <div class="note small">
+      Enforcement measures are not fixed in advance and may be applied based on severity, risk, security needs, legal compliance,
+      or operational reasons. You have no legal entitlement to maintain an account, any status, content,
+      or continued access to any feature.
+    </div>
+
+    <hr />
+
+    <h2><span class="icon">🚫</span>6. Availability, “AS IS”, and Disclaimers</h2>
+    <p>
+      The Service is provided on an <strong>“AS IS”</strong> and <strong>“AS AVAILABLE”</strong> basis, especially as a beta/trial product.
+      The operator makes no warranties of any kind (express or implied), including fitness for a particular purpose, non-infringement,
+      or uninterrupted, timely, secure, or error-free operation.
+    </p>
+    <p>
+      The operator does not guarantee that the Service (or any content) will be accurate, complete, reliable, or available at any time.
+      You accept that you use the Service at your own risk.
+    </p>
+
+    <hr />
+
+    <h2><span class="icon">⚠️</span>7. Limitation of Liability</h2>
+    <p>
+      To the maximum extent permitted by applicable law, the operator is not liable for any indirect, incidental, special, consequential,
+      exemplary, or punitive damages, or for loss of profits, data, goodwill, or other intangible losses arising from or related to your use
+      of the Service.
+    </p>
+    <p class="small">
+      Without limiting the above, the operator is not liable for disputes between users, event organizers, or third parties, or for any harm
+      arising from attendance at events or reliance on user-generated content.
+    </p>
+
+    <hr />
+
+    <h2><span class="icon">🔄</span>8. Changes to These Terms</h2>
+    <p>
+      The operator may update these Terms at any time. The updated version will be published on this page (including version and effective date).
+      In some cases, the App may require you to provide a new consent. If you continue using the Service after the effective date, you agree to the updated Terms,
+      unless applicable law requires a different mechanism.
+    </p>
+
+    <hr />
+
+    <h2><span class="icon">📎</span>9. Related Documents</h2>
+    <p>These Terms are supplemented by:</p>
+    <ul>
+      <li><strong>Privacy Policy</strong></li>
+      <li><strong>Rules</strong> (events, profiles, moderation)</li>
+      <li><strong>Account and Data Deletion</strong> (Delete Account)</li>
+    </ul>
+    <p class="small">
+      In case of conflict, the full text of these documents prevails over any summaries displayed in the App.
+    </p>
+
+    <hr />
+
+    <h2><span class="icon">📧</span>10. Contact</h2>
+    <p>Questions regarding these Terms should be sent to:</p>
+    <p>
+      <strong>Email:</strong>
+      <a href="mailto:noraapp@noraappinfo.com">noraapp@noraappinfo.com</a>
+    </p>
+
+  </main>
+</body>
+</html>

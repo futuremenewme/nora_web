@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Datenschutzerklärung – NORA</title>
+
+  <!-- SEO / Sharing -->
+  <meta name="description" content="Datenschutzerklärung für NORA – welche Daten verarbeitet werden, Zwecke, Sicherheit, Aufbewahrung und Rechte." />
+  <meta property="og:title" content="Datenschutzerklärung – NORA" />
+  <meta property="og:description" content="NORA Datenschutz: Datenkategorien, Zwecke, Sicherheit, Aufbewahrung und Nutzerrechte." />
+  <meta property="og:type" content="article" />
+  <meta name="robots" content="index,follow" />
+
+  <!-- ✅ Versioning: edit only here -->
+  <meta name="nora-doc" content="privacy" />
+  <meta name="nora-version" content="1.1" />
+  <meta name="nora-updated" content="2026-05-04" />
+  <meta name="nora-effective" content="2026-05-04" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: #fafafa;
+      color: #222;
+      margin: 0;
+      padding: 0;
+      line-height: 1.65;
+    }
+
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 32px 20px 64px;
+      background: #ffffff;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .updated {
+      color: #666;
+      font-size: 14px;
+      margin-bottom: 32px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .meta-pill {
+      display: inline-flex;
+      gap: 6px;
+      align-items: center;
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid #e5e7eb;
+      background: #f9fafb;
+      color: #444;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .meta-pill strong {
+      font-weight: 800;
+      color: #111;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin-top: 40px;
+      margin-bottom: 12px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    p { margin: 0 0 12px; }
+    ul { padding-left: 20px; margin-top: 8px; }
+    li { margin-bottom: 6px; }
+
+    hr {
+      border: none;
+      border-top: 1px solid #e0e0e0;
+      margin: 40px 0;
+    }
+
+    .icon { font-size: 20px; }
+
+    .note {
+      background: #f3f4f6;
+      padding: 14px;
+      border-radius: 8px;
+      border: 1px solid #e5e7eb;
+      margin-top: 12px;
+    }
+
+    .warn {
+      background: #fff7ed;
+      padding: 14px;
+      border-radius: 8px;
+      border: 1px solid #fed7aa;
+      margin-top: 12px;
+    }
+
+    .contact {
+      background: #f3f4f6;
+      padding: 16px;
+      border-radius: 8px;
+      margin-top: 12px;
+      border: 1px solid #e5e7eb;
+    }
+
+    a { color: #2563eb; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .small { font-size: 14px; color: #555; }
+    strong { font-weight: 700; }
+  </style>
+
+  <script>
+    // ✅ Fill version/dates from meta tags
+    (function () {
+      function getMeta(name) {
+        var el = document.querySelector('meta[name="' + name + '"]');
+        return el ? el.getAttribute('content') : '';
+      }
+
+      function formatDateISO(iso) {
+        if (!iso || !/^\d{4}-\d{2}-\d{2}$/.test(iso)) return iso || '';
+        var p = iso.split('-');
+        return p[2] + '. ' + p[1] + '. ' + p[0];
+      }
+
+      document.addEventListener('DOMContentLoaded', function () {
+        var version = getMeta('nora-version');
+        var updated = getMeta('nora-updated');
+        var effective = getMeta('nora-effective');
+
+        var vEl = document.getElementById('noraVersion');
+        var uEl = document.getElementById('noraUpdated');
+        var eEl = document.getElementById('noraEffective');
+
+        if (vEl && version) vEl.textContent = version;
+        if (uEl && updated) uEl.textContent = formatDateISO(updated);
+        if (eEl && effective) eEl.textContent = formatDateISO(effective);
+      });
+    })();
+  </script>
+</head>
+
+<body>
+  <main class="container">
+    <h1>🔐 Datenschutzerklärung – NORA</h1>
+
+    <div class="updated">
+      <span class="meta-pill">Version: <strong id="noraVersion">1.1</strong></span>
+      <span class="meta-pill">Letzte Aktualisierung: <strong id="noraUpdated">04. 05. 2026</strong></span>
+      <span class="meta-pill">Gültig ab: <strong id="noraEffective">04. 05. 2026</strong></span>
+      <noscript>
+        <span class="meta-pill">Hinweis: Für die automatische Anzeige der Metadaten ist JavaScript erforderlich.</span>
+      </noscript>
+    </div>
+
+    <div class="warn small">
+      <strong>WICHTIG – BETA/TESTVERSION:</strong> NORA wird als <strong>Test-/Beta-/Probeversion</strong> bereitgestellt.
+      Funktionen und Datenverarbeitung können sich im Zuge der Weiterentwicklung ändern oder der Dienst kann ausgesetzt/beendet werden.
+      Diese Datenschutzerklärung gilt zusammen mit den <strong>Nutzungsbedingungen</strong>.
+    </div>
+
+    <p>
+      Diese Datenschutzerklärung erläutert, wie personenbezogene Daten im Zusammenhang mit der Nutzung der mobilen Anwendung <strong>NORA</strong>
+      (der „Dienst“) verarbeitet werden. Wir verarbeiten personenbezogene Daten nur soweit dies für die Bereitstellung, Absicherung und Verbesserung
+      des Dienstes erforderlich ist und im Einklang mit dem anwendbaren Recht (einschließlich, soweit relevant, der DSGVO).
+    </p>
+
+    <hr />
+
+    <h2><span class="icon">📥</span>1. Kategorien personenbezogener Daten</h2>
+    <p>Je nach Nutzung des Dienstes können u. a. folgende Datenkategorien verarbeitet werden:</p>
+    <ul>
+      <li><strong>Konto-Daten:</strong> E-Mail-Adresse; Telefonnummer (zur Verifizierung); grundlegende Profildaten, die Sie angeben.</li>
+      <li><strong>Verifizierungsdaten:</strong> Identität in einem sozialen Netzwerk.</li>
+      <li><strong>Inhaltsdaten:</strong> Veranstaltungen und sonstige Inhalte, die Sie erstellen oder hochladen (z. B. Beschreibungen, Bilder).</li>
+      <li><strong>Standortdaten (optional):</strong> Stadt/Region oder ungefähre Position, sofern Sie eine Berechtigung erteilen.</li>
+      <li><strong>Technische Daten:</strong> Gerätekennungen (soweit verfügbar), App-Version, Betriebssystem, Protokolle, Diagnosedaten und sicherheitsrelevante Signale.</li>
+    </ul>
+
+    <div class="note small">
+      <strong>Datenminimierung:</strong> Wir verarbeiten nach Möglichkeit nur Daten, die für Funktion, Sicherheit und Compliance erforderlich sind.
+      Optionale Berechtigungen (z. B. Standort) können in den Geräteeinstellungen verwaltet werden.
+    </div>
+
+    <hr />
+
+    <h2><span class="icon">🎯</span>2. Zwecke und Rechtsgrundlagen</h2>
+    <p>Wir können personenbezogene Daten u. a. zu folgenden Zwecken verarbeiten:</p>
+    <ul>
+      <li><strong>Bereitstellung des Dienstes:</strong> Kontoerstellung und -verwaltung; Kernfunktionen; Anzeige von Veranstaltungen.</li>
+      <li><strong>Verifizierung und Sicherheit:</strong> Betrugsprävention; Missbrauchsvermeidung; Durchsetzung von Regeln; Schutz der Nutzer.</li>
+      <li><strong>Verbesserung des Dienstes:</strong> Diagnose, Analytik, Fehlerbehebung und Performance-Monitoring.</li>
+      <li><strong>Rechtliche Pflichten:</strong> Erfüllung gesetzlicher Verpflichtungen und Reaktion auf rechtmäßige Anfragen.</li>
+    </ul>
+    <p class="small">
+      Je nach Kontext kann die Verarbeitung auf Vertragserfüllung (Bereitstellung des Dienstes), berechtigten Interessen (Sicherheit, Betrugsprävention, Verbesserung),
+      Einwilligung (z. B. optionaler Standort) und/oder gesetzlichen Pflichten beruhen.
+    </p>
+
+    <hr />
+
+    <h2><span class="icon">📱</span>3. Geräteberechtigungen</h2>
+    <p>Der Dienst kann Zugriff auf bestimmte Gerätefunktionen anfragen, z. B.:</p>
+    <ul>
+      <li>Internet (Synchronisierung),</li>
+      <li>Benachrichtigungen (Updates),</li>
+      <li>Standort (optional, zur Anzeige relevanter Inhalte).</li>
+    </ul>
+    <p class="small">
+      Berechtigungen sind optional und können in den Geräteeinstellungen geändert werden. Ohne Berechtigung können einzelne Funktionen eingeschränkt sein.
+    </p>
+
+    <hr />
+
+    <h2><span class="icon">🤝</span>4. Drittdienstleister</h2>
+    <p>
+      Wir können Drittdienstleister einsetzen, u. a. insbesondere <strong>Firebase</strong> (Authentifizierung, Datenbank, Analytik/Diagnose)
+      sowie Zahlungsplattformen (z. B. Apple/Google) für In-App-Käufe.
+    </p>
+    <p class="small">
+      Diese Anbieter können Daten nach ihren eigenen Bedingungen/Datenschutzrichtlinien verarbeiten und Server in unterschiedlichen Regionen betreiben.
+      Wir nutzen solche Anbieter nur soweit dies für den Betrieb des Dienstes erforderlich ist.
+    </p>
+
+    <hr />
+
+    <h2><span class="icon">🔒</span>5. Sicherheit</h2>
+    <p>
+      Wir treffen angemessene technische und organisatorische Maßnahmen zum Schutz personenbezogener Daten. Dennoch ist kein System vollständig sicher;
+      eine absolute Sicherheit bei Internetübertragungen kann nicht garantiert werden.
+    </p>
+
+    <hr />
+
+    <h2><span class="icon">🗑️</span>6. Aufbewahrung und Löschung</h2>
+    <p>
+      Wir speichern personenbezogene Daten nur so lange, wie dies für die oben genannten Zwecke erforderlich ist, einschließlich des Kontobetriebs,
+      der Sicherheit und der Compliance. Sie können die Löschung Ihres Kontos gemäß dem Dokument „Konto- und Datenlöschung“ beantragen.
+    </p>
+    <div class="note small">
+      <strong>Begrenzte Ausnahmen:</strong> Bestimmte Daten können für eine begrenzte Zeit aufbewahrt werden, wenn dies gesetzlich erforderlich ist,
+      für Sicherheitslogs, Betrugsprävention, Streitbeilegung oder Durchsetzung (soweit gesetzlich zulässig).
+    </div>
+
+    <hr />
+
+    <h2><span class="icon">🌍</span>7. Internationale Nutzer</h2>
+    <p>
+      Der Dienst kann auch außerhalb der Tschechischen Republik genutzt werden. Daten können über Infrastrukturen in anderen Ländern verarbeitet werden.
+      Soweit erforderlich, werden angemessene Schutzmaßnahmen nach anwendbarem Recht eingesetzt.
+    </p>
+
+    <hr />
+
+    <h2><span class="icon">✏️</span>8. Änderungen dieser Erklärung</h2>
+    <p>
+      Wir können diese Datenschutzerklärung von Zeit zu Zeit aktualisieren. Die aktuelle Version ist stets auf dieser Seite verfügbar.
+      Soweit erforderlich, kann die App eine erneute Zustimmung verlangen.
+    </p>
+
+    <hr />
+
+    <h2><span class="icon">📧</span>9. Kontakt</h2>
+    <div class="contact">
+      <p>Bei Fragen zum Datenschutz kontaktieren Sie uns unter:</p>
+      <p>
+        <strong>E-Mail:</strong>
+        <a href="mailto:noraapp@noraappinfo.com">noraapp@noraappinfo.com</a>
+      </p>
+      <p class="small">
+        Bitte geben Sie die mit dem Konto verknüpfte E-Mail oder Telefonnummer an, damit wir Ihre Anfrage verifizieren können.
+      </p>
+    </div>
+
+  </main>
+</body>
+</html>
